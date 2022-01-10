@@ -10,7 +10,7 @@ var korea = "가각간 갈 감갑ㄲ까깨꼬꼭꽃꾀ㄶ ㄺ ㄻ ㄼ ㄽ ㄾ �
 //converting the string into an array of single characters
 korea = korea.split("");
 
-var font_size = 10;
+var font_size = 20;
 var columns = c.width/font_size; //number of columns for the rain
 //an array of drops - one per column
 var drops = [];
