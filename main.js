@@ -11,9 +11,9 @@ var korea = "가각간갈감갑ㄲ까깨꼬꼭꽃꾀ㄶㄺㄻㄼㄽㄾㄿㅀㅄ�
 korea = korea.split("");
 
 //numbers characters 
-var number = "0123456789";
+//var number = "0123456789";
 //converting the string into an array of single characters
-number = number.split("");
+//number = number.split("");
 
 var font_size = 20;
 var columns = c.width/font_size; //number of columns for the rain
