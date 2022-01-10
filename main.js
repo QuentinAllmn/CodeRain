@@ -5,8 +5,13 @@ var ctx = c.getContext("2d");
 c.height = window.innerHeight;
 c.width = window.innerWidth;
 
-//chinese characters - taken from the unicode charset
-var korea = "가각간 갈 감갑ㄲ까깨꼬꼭꽃꾀ㄶ ㄺ ㄻ ㄼ ㄽ ㄾ ㄿ ㅀ ㅄㅏ ㅑ ㅓ ㅕ ㅗ ㅛ ㅜ ㅠ ㅡ ㅣㅐ ㅒ ㅔ ㅖ ㅘ ㅝ ㅢ ㅙ ㅟ ㅚ ㅞㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ ㅈ ㅊ ㅋ ㅌ ㅍ ㅎㄲ ㄸ ㅃ ㅆ ㅉ";
+//korea characters - taken from the unicode charset
+var korea = "가각간갈감갑ㄲ까깨꼬꼭꽃꾀ㄶㄺㄻㄼㄽㄾㄿㅀㅄㅏㅑㅓㅕㅗㅛㅜㅠㅡㅣㅐ ㅒ ㅔ ㅖ ㅘ ㅝ ㅢ ㅙ ㅟ ㅚ ㅞㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ ㅈ ㅊ ㅋ ㅌ ㅍ ㅎㄲ ㄸ ㅃ ㅆ ㅉ";
+//converting the string into an array of single characters
+korea = korea.split("");
+
+//numbers characters - taken from the unicode charset
+var korea = "0123456789";
 //converting the string into an array of single characters
 korea = korea.split("");
 
@@ -33,7 +38,7 @@ function draw()
 	for(var i = 0; i < drops.length; i++)
 	{
 		//a random chinese character to print
-		var text = chinese[Math.floor(Math.random()*chinese.length)];
+		var text = korea[Math.floor(Math.random()*korea.length)];
 		//x = i*font_size, y = value of drops[i]*font_size
 		ctx.fillText(text, i*font_size, drops[i]*font_size);
 		
