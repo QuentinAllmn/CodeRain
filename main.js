@@ -6,9 +6,9 @@ c.height = window.innerHeight;
 c.width = window.innerWidth;
 
 //chinese characters - taken from the unicode charset
-var chinese = "가각간 갈 감갑ㄲ까깨꼬꼭꽃꾀ㄶ ㄺ ㄻ ㄼ ㄽ ㄾ ㄿ ㅀ ㅄㅏ ㅑ ㅓ ㅕ ㅗ ㅛ ㅜ ㅠ ㅡ ㅣㅐ ㅒ ㅔ ㅖ ㅘ ㅝ ㅢ ㅙ ㅟ ㅚ ㅞㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ ㅈ ㅊ ㅋ ㅌ ㅍ ㅎㄲ ㄸ ㅃ ㅆ ㅉ";
+var korea = "가각간 갈 감갑ㄲ까깨꼬꼭꽃꾀ㄶ ㄺ ㄻ ㄼ ㄽ ㄾ ㄿ ㅀ ㅄㅏ ㅑ ㅓ ㅕ ㅗ ㅛ ㅜ ㅠ ㅡ ㅣㅐ ㅒ ㅔ ㅖ ㅘ ㅝ ㅢ ㅙ ㅟ ㅚ ㅞㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ ㅈ ㅊ ㅋ ㅌ ㅍ ㅎㄲ ㄸ ㅃ ㅆ ㅉ";
 //converting the string into an array of single characters
-chinese = chinese.split("");
+korea = korea.split("");
 
 var font_size = 10;
 var columns = c.width/font_size; //number of columns for the rain
