@@ -5,7 +5,7 @@ var ctx = c.getContext("2d");
 c.height = window.innerHeight;
 c.width = window.innerWidth;
 
-//korea characters 
+//korean characters 
 var korea = "가각간갈감갑ㄲ까깨꼬꼭꽃꾀ㄶㄺㄻㄼㄽㄾㄿㅀㅄㅏㅑㅓㅕㅗㅛㅜㅠㅡㅣㅐ ㅒ ㅔ ㅖ ㅘ ㅝ ㅢ ㅙ ㅟ ㅚ ㅞㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ ㅈ ㅊ ㅋ ㅌ ㅍ ㅎㄲ ㄸ ㅃ ㅆ ㅉ";
 //converting the string into an array of single characters
 korea = korea.split("");
@@ -37,7 +37,7 @@ function draw()
 	//looping over drops
 	for(var i = 0; i < drops.length; i++)
 	{
-		//a random korea character to print
+		//a random korean character to print
 		var text = korea[Math.floor(Math.random()*korea.length)];
 		//x = i*font_size, y = value of drops[i]*font_size
 		ctx.fillText(text, i*font_size, drops[i]*font_size);
